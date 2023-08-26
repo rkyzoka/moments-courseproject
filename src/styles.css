@@ -17,3 +17,43 @@ a {
 a:hover {
   color: #228ecb;
 }
+
+/*Global Form*/
+
+form {
+  width: 450px;
+  margin: 1rem auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.form-group input,
+textarea {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  color: #777;
+}
+
+input[type="submit"] {
+  padding: 0.2rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background: #228ecb;
+  color: #fff;
+}
