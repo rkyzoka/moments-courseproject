@@ -1,8 +1,14 @@
 <div class="home-container">
      <h1>See what they're sharing!</h1>
-     <div *ngIf="allMoments.length > 0; else noMoments">
+     <div class="search-container">
+          <form>
+               <fa-icon [icon]="faSearch"></fa-icon>
+               <input type="text" placeholder="Or search for a moment" (input)="search($event)">
+          </form>
+     </div>
+     <div *ngIf="searchResults.length > 0; else noMoments">
           <div class="moments-container">
-               <div class="moment" *ngFor="let moment of allMoments">
+               <div class="moment" *ngFor="let moment of searchResults">
                     <img src="{{this.apiUrl}}uploads/{{moment.image}}" alt="{{moment.title}}">
                     <h3>{{moment.title}}</h3>
                     <p class="date">At: {{moment.created_at}}</p>
