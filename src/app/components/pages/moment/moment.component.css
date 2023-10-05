@@ -1,0 +1,39 @@
+.moment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  margin: 1.3rem auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.moment img {
+  max-width: 500px;
+  margin: 0 auto 0.8rem;
+}
+
+.about-moment,
+.action {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  padding: 1.2rem;
+}
+
+.comments {
+  margin-bottom: 1rem;
+  padding: 1.3rem 0;
+}
+
+.about-moment h3,
+.action h3,
+.comments h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}

@@ -19,7 +19,17 @@ export class MomentService {
     return this.http.get<IResponse<IMoment[]>>(this.momentsUrl);
   }
 
+  getMoment(id: Number): Observable<IResponse<IMoment>> {
+    const url = `${this.momentsUrl}/${id}`;
+    return this.http.get<IResponse<IMoment>>(url);
+  }
+
   createMoment(formData: FormData): Observable<FormData> {
     return this.http.post<FormData>(this.momentsUrl, formData);
+  }
+
+  deleteMoment(id: Number) {
+    const url = `${this.momentsUrl}/${id}`;
+    return this.http.delete(url);
   }
 }

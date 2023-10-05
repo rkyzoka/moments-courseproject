@@ -1,5 +1,5 @@
 export interface IMoment {
-  id?: string;
+  id?: number;
   title: string;
   description: string;
   image: string;
